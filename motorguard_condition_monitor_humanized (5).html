@@ -292,5 +292,16 @@ if($('channelId').value.trim()){
   refresh();
 }else{render();}
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const { createClient } = window.supabase;
+
+  const supabaseClient = createClient(
+    "https://dsvfddueizdqmnvwccpw.supabase.co",
+    "sb_publishable_Og7zzFTpsax75HTzLV5Obg_ve-3TnGn"
+  );
+
+  console.log("Supabase client initialized!");
+</script>
 </body>
 </html>
